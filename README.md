@@ -7,3 +7,4 @@ Navigate to http://localhost:5000/
 SQLite Notes
 https://www.baeldung.com/spring-boot-sqlite
 https://www.blackslate.io/articles/integrate-sqlite-with-spring-boot
+https://medium.com/@mateuszmilewczyk/entity-in-hibernate-mapping-java-objects-to-database-structures-1860e6862379

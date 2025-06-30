@@ -13,7 +13,7 @@ public class SystemController {
 
 	@GetMapping("/version")
 	public ResponseEntity<Map<String, String>> getVersion() {
-		return ResponseEntity.ok(Map.of("version", "1.2.4"));
+		return ResponseEntity.ok(Map.of("version", "2.3.5"));
 	}
 
 }

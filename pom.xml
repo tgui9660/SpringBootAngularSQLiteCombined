@@ -8,14 +8,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Spring Angular Deployment</name>
+	<name>Spring Angular SQLite Deployment</name>
 	<url>http://maven.apache.org</url>
 
-	<!-- <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-	</properties> -->
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -34,6 +29,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>3.25.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-community-dialects</artifactId>
+		</dependency>
+		<!-- Spring Boot Starter Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -72,7 +81,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- <nodeVersion>v18.16.1</nodeVersion> -->
 					<nodeVersion>v22.16.0</nodeVersion>
 					<installDirectory>target</installDirectory>
 					<workingDirectory>src/frontend</workingDirectory>

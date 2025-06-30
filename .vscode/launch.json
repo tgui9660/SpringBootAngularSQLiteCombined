@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-App<spring-angular-deployment>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.simple.spring_angular_deployment.App",
+            "projectName": "spring-angular-deployment",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

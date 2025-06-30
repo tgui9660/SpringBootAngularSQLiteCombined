@@ -1,4 +1,4 @@
-# Spring Angular SQLite Deployment
+# Spring Boot Angular SQLite Deployment
 
 This project aims to be a simple yet effective way to deploy full functional Spring Boot/Angular/SQLite in EBS.
 

@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 public class WebCounterService {
 
     @Autowired
-    private UserRepository userRepository;
+    private WebCounterRepository wcrRepository;
 
-    public User saveOrUpdate(User p) {
-        userRepository.save(p);
+    public WebCounter saveOrUpdate(WebCounter p) {
+        wcrRepository.save(p);
         return p;
     }
 }

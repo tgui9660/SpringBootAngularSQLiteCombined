@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface WebCounterRepository extends CrudRepository<User, Integer> {
+public interface WebCounterRepository extends CrudRepository<WebCounter, Integer> {
 
 }

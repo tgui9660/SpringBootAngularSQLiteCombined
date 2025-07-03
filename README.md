@@ -12,3 +12,7 @@ https://medium.com/@mateuszmilewczyk/entity-in-hibernate-mapping-java-objects-to
 
 Working with this.
 https://www.blackslate.io/articles/integrate-sqlite-with-spring-boot 
+
+
+// Good overview with MySQL
+https://spring.io/guides/gs/accessing-data-mysql

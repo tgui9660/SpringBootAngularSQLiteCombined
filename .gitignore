@@ -3,3 +3,5 @@ src/frontend/.angular/*
 src/frontend/node_modules/
 src/frontend/dist/**
 *.class
+target/classes/com/simple/spring_angular_deployment/App.class
+target/classes/application.properties

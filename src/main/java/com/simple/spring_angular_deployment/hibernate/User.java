@@ -1,4 +1,4 @@
-package com.simple.spring_angular_deployment.resources.hibernate;
+package com.simple.spring_angular_deployment.hibernate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

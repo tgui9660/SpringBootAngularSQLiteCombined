@@ -1,4 +1,4 @@
-package com.simple.spring_angular_deployment.resources.hibernate;
+package com.simple.spring_angular_deployment.hibernate;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;

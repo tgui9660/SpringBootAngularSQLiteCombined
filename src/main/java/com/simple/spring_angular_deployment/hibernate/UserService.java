@@ -1,4 +1,4 @@
-package com.simple.spring_angular_deployment.resources.hibernate;
+package com.simple.spring_angular_deployment.hibernate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

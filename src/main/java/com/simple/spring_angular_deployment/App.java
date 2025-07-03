@@ -13,6 +13,12 @@ public class App {
 
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
+
+		UserService us = new UserService();
+
+		User eric = new	User("Eric", "Morgan");
+
+		us.createUser(eric);
 	}
 
 	// @Repository

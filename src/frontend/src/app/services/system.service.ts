@@ -1,16 +1,19 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class SystemService {
-
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   public getVersion(): Observable<{ version: string }> {
     return this.httpClient.get<{ version: string }>("/api/system/version");
+  }
+
+  public getCounter(): Observable<{ counter: string  }> {
+    return this.httpClient.get<{ counter: string }>("/api/system/counter");
   }
 
 }

@@ -18,16 +18,22 @@ public class SystemController {
 	@Autowired
 	WebCounterService wcService;
 
-
 	@GetMapping("/version")
 	public ResponseEntity<Map<String, String>> getVersion() {
-		return ResponseEntity.ok(Map.of("version", "2.3.5"));
+		return ResponseEntity.ok(Map.of("version", "3.2.6"));
 	}
 
 	@GetMapping("/counter")
-	public ResponseEntity<Integer> getCounter() {
-	    WebCounter wc =	wcService.increment();
+	public ResponseEntity<Map<String, String>> getCounter() {
+		WebCounter wc = wcService.increment();
 
-		return ResponseEntity.ok(wc.GetCount());
+		return ResponseEntity.ok(Map.of("counter", wc.GetCount() + ""));
+	}
+
+	@GetMapping("/counterold")
+	public ResponseEntity<String> getCounterold() {
+		WebCounter wc = wcService.increment();
+
+		return ResponseEntity.ok(wc.GetCount() + "");
 	}
 }

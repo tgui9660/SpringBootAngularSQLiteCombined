@@ -4,13 +4,16 @@ This demo project is an effort to combine all features needed within a single Sp
 
 To do so the following are within this project:
 * Angular frontend
-* SQL Lite DB with persistence
+* SQLite DB with persistence
 * ORM via Hibernate
 * Spring Boot as the executing container
 
 <br/>
 
-Navigate to http://localhost:5000/
+## Notes
+* Navigate to http://localhost:5000/
+* Angular GUI on load calls a controller to increment a page counter whos value is stored in SQLite
+
 
 ## SQLite Notes
 https://www.baeldung.com/spring-boot-sqlite
